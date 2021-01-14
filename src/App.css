@@ -1,0 +1,88 @@
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#operations {
+  text-align: center;
+  font-weight: b;
+}
+#transactions {
+  text-align: center;
+  font-weight: bold;
+}
+.transaction {
+  font-weight: bold;
+  display: inline-block;
+}
+#transaction-headline {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+#categories{
+  text-align: center;
+  color:black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#make-a-transaction {
+  text-align: left;
+  color:black;
+  font-size: 22px;
+  font-weight: bold;
+}
+#your-transaction {
+  text-align: left;
+  color:black;
+  font-size: 22px;
+  font-weight: bold;
+}
+#get-breakdown {
+  text-align: left;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+#make-a-transaction-headline {
+  color: black;
+  font-weight: bold;
+  font-size: 27px;
+}
+.amount-minus {
+  background-color: red;
+}
+.amount-plus {
+  background-color: green;
+}
+.balance-plus {
+  background-color: green;
+}
+.balance-minus {
+  background-color: red;
+}
+body {
+  background-image: url("https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2019/default/shutterstock_1432952840.jpg&w=900&height=601");
+  background-color: #cccccc;
+}
