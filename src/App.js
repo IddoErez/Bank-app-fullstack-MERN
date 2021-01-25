@@ -15,18 +15,18 @@ class App extends Component {
     }
   }
   async getTransactions() {
-    return axios.get("http://localhost:4200/transactions")
+    return axios.get("/transactions")
   }
   async componentDidMount() {
     const response = await this.getTransactions()
     this.setState({ transactions: response.data })
   }
   deleteTransaction = async (id) => {
-    const response = await axios.delete(`http://localhost:4200/transaction/${id}`)
+    const response = await axios.delete(`/transaction/${id}`)
     this.setState({ transactions: response.data })
   }
   async postTransaction(newTransaction) {
-    return axios.post("http://localhost:4200/transaction", newTransaction)
+    return axios.post("/transaction", newTransaction)
   } 
   deposit = async (newTransaction) => {
     const response = await this.postTransaction(newTransaction)

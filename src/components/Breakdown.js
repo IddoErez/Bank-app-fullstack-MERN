@@ -14,7 +14,7 @@ class Breakdown extends Component {
         this.setState({ categories: categories.data })
     }
     getCategories = async () => {
-        const response = await axios.get("http://localhost:4200/breakdown")
+        const response = await axios.get("/breakdown")
         return response
     }
     render() {
