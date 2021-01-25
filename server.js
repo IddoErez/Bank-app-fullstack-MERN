@@ -4,7 +4,7 @@ const api = require('./server/routes/api')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const path = require('path')
-mongoose.connect(process.env.MONGODB_URI||'mongodb://localhost/transactionsDB', { useNewUrlParser: true},  { useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI||'mongodb://localhost/transactionsDB')
 // mongoose.connect("mongodb+srv://idodoerez:Tradingpostfinalproject135@cluster0.d2ipx.mongodb.net/transactionsDB?retryWrites=true&w=majority")
 // app.use(function (req, res, next) {
 //     res.header('Access-Control-Allow-Origin', '*')
