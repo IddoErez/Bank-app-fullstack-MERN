@@ -16,7 +16,6 @@ mongoose.connect(process.env.MONGODB_URI||'mongodb://localhost/transactionsDB')
 // })
 
 app.use(express.static(path.join(__dirname, 'build')));
-app.use(cors());
 app.use(bodyParser.json())
 app.use(express.urlencoded({ extended: false }))
 app.use('/', api)
