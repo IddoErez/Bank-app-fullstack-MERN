@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const Transaction = require("../models/transactions")
+const Transaction = require("../Models/Transactions")
 
 router.get('/transactions', async (req, res) => {
     let transactions = await Transaction.find({})
